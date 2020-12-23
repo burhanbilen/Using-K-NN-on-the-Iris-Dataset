@@ -33,14 +33,14 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_
 
 from sklearn.neighbors import KNeighborsClassifier
 knn = KNeighborsClassifier(n_neighbors=3, metric='minkowski')
-knn.fit(X_train,y_train)
+knn.fit(X_train, y_train)
 y_pred = knn.predict(X_test)
 
 from sklearn import metrics
 print(metrics.accuracy_score(y_test, y_pred))
 
 from sklearn.metrics import confusion_matrix
-cm = confusion_matrix(y_test,y_pred) 
+cm = confusion_matrix(y_test, y_pred) 
 print(cm)
 
 import seaborn as sns
