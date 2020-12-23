@@ -1,1 +1,1 @@
-# Using-K-NN-on-the-Iris-Dataset
+# Using the K-Nearest Neighbors algorithm on the Iris dataset.
